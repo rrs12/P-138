@@ -1,0 +1,16 @@
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 !important;
+}
+#start,#status{
+    font-size: 22px;
+}
+#status{
+    background-color: #f0ad4e;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 7px;
+}

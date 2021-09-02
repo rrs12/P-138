@@ -4,7 +4,7 @@
     justify-content: space-between;
     border-radius: 0 !important;
 }
-#start,#status{
+.btn,#status{
     font-size: 22px;
 }
 #status{
@@ -13,4 +13,16 @@
     width: fit-content;
     padding: 5px;
     border-radius: 7px;
+}
+footer{
+    background-color: white;
+    bottom: 0;
+    font-size: 22px;
+}
+.modal-dialog{
+    width: 90%;
+}
+.instruction_img{
+    display: inline-block;
+    width: 45%;
 }

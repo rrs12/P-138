@@ -1,28 +1,36 @@
-.heading{
+.heading {
     width: 100%;
     display: flex;
     justify-content: space-between;
     border-radius: 0 !important;
 }
-.btn,#status{
+
+.btn,
+#status {
     font-size: 22px;
 }
-#status{
+
+#status {
     background-color: #f0ad4e;
     color: white;
     width: fit-content;
     padding: 5px;
     border-radius: 7px;
 }
-footer{
+
+footer {
     background-color: white;
     bottom: 0;
     font-size: 22px;
+    position: fixed;
+    width: 100%;
 }
-.modal-dialog{
+
+.modal-dialog {
     width: 90%;
 }
-.instruction_img{
+
+.instruction_img {
     display: inline-block;
     width: 45%;
 }

@@ -9,6 +9,12 @@ var paddle1Y;
 var  playerscore =0;
 var audio1;
 var pcscore =0;
+
+var rightX="";
+var rightY="";
+var score=0.2;
+
+
 //ball x and y and speedx speed y and radius
 var ball = {
     x:350/2,
@@ -30,8 +36,14 @@ function modelLoaded() {
   console.log('Model Loaded!');
 }
 
-function gotPoses(){
-  console.log("GotPoses")
+function gotPoses(results){
+  if(results.length > 0)
+  {
+console.log(results)
+    rightX = results[0].pose.rightWrist.x;
+    rightY = results[0].pose.rightWrist.y;
+    score=results[0].pose.score;
+  }
 }
 
 function draw(){
@@ -73,7 +85,15 @@ function draw(){
    
    //function move call which in very important
     move();
+
+if(score>0.2){
+fill("#FF0000")
+stroke("#0000FF")
+circle(rightX, rightY, 10)
 }
+
+  }
+
 
 
 
@@ -83,7 +103,9 @@ function reset(){
    ball.y = height/2+100;
    ball.dx=3;
    ball.dy =3;
-   
+
+
+  
 }
 
 

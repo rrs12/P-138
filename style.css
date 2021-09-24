@@ -1,36 +1,41 @@
-.heading {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 0 !important;
+
+.heading
+{
+width: 100%;
+text-align: left;
+}
+.heading h3{
+    display: inline;
 }
 
-.btn,
-#status {
-    font-size: 22px;
+.heading button{
+    float: right;
+    border: 1px solid white;
 }
 
-#status {
-    background-color: #f0ad4e;
-    color: white;
-    width: fit-content;
-    padding: 5px;
-    border-radius: 7px;
+#start ,#status, #restart
+{
+font-size: 22px;
 }
 
-footer {
-    background-color: white;
-    bottom: 0;
-    font-size: 22px;
-    position: fixed;
-    width: 100%;
+.modal-dialog
+{
+    width: 70%;
 }
-
-.modal-dialog {
-    width: 90%;
+.modal-body
+{
+    text-align: left;
+    font-size: 20px;
 }
-
-.instruction_img {
-    display: inline-block;
-    width: 45%;
+h4
+{
+   background-color: grey;
+   color:white;
+   line-height: 2;
 }
+canvas 
+  {
+      border:3px solid white;
+      border-radius: 20px;
+      box-shadow:  5px 5px 5px white;
+  }
